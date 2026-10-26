@@ -1,0 +1,43 @@
+# site variables
+url:          "https://rand-asswad.xyz/website_v2"
+baseurl:      ""
+source:       ./_src
+destination:  ./_site
+
+# meta
+# (per-language descriptions live in _src/_data/i18n.yml)
+title: Rand Asswad
+
+# i18n: the language used for canonical / x-default links.
+# Languages themselves are declared in _src/_data/languages.yml
+default_lang: en
+
+# sass config
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# front-matter defaults
+# The most specific scope wins, so every page is English unless it lives
+# in a language folder. To add a language: copy the "fr" block below.
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+# jekyll plugins
+plugins:
+  - jekyll-minifier
+
+# minifier settings
+jekyll-minifier:
+  compress_css: false

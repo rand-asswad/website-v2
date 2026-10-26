@@ -1,0 +1,17 @@
+# Production
+.draft
+fr/
+fr.*
+
+# Jekyll metadata
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler folders
+.bundle/
+vendor/
+
+# Editors
+.vscode/
