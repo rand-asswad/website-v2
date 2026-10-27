@@ -61,3 +61,6 @@ $theme-map-dark: (
     $theme-tertiary:      #444444,
     $theme-on-tertiary:   #e8e8e8,
 );
+
+// Publication types (must match the `type` values in _data/publications.yml)
+$publication-types: journal, conference, preprint;

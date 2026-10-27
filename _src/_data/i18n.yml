@@ -3,8 +3,13 @@
 # Page content itself lives in the pages (markdown) and in _data/cv/<lang>.yml
 en:
   description: >-
-    NAME is an engineer in applied mathematics and computer science,
-    specialized in AI and mathematical modeling.
+    Rand Asswad is a junior researcher in applied mathematics,
+    specialized in control theory, optimization, and modeling.
+  filter_all: All
+  publication_types:
+    journal: Journal
+    conference: Conference
+    preprint: Preprint
   skip_to_content: Skip to content
   nav_label: Main navigation
   lang_label: Language
@@ -13,8 +18,13 @@ en:
   not_found_home: Back to the home page
 fr:
   description: >-
-    NAME est ingénieur en mathématiques appliquées et informatique,
-    spécialisé en IA et en modélisation mathématique.
+    Rand Asswad est chercheur en mathématiques appliquées,
+    spécialisé en théorie de contrôle, optimisation et modélisation.
+  filter_all: Tous 
+  publication_types:
+    journal: Journal
+    conference: Conférence
+    preprint: Preprint
   skip_to_content: Aller au contenu
   nav_label: Navigation principale
   lang_label: Langue

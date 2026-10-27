@@ -1,0 +1,70 @@
+- title: Optimal Control of Vitamin-Mediated Algal-Bacterial Co-Cultures under Optogenetic Regulation
+  type: journal
+  publisher: Automatica
+  date: 2026-01-30
+  doi: 10.1016/j.automatica.2026.112997
+  authors:
+    - Rand Asswad
+    - Walid Djema
+    - Olivier Bernard
+    - Jean-Luc Gouzé
+    - Eugenio Cinquemani
+
+- title: Single- and multi-objective performance optimization of an algal-bacterial synthetic process 
+  type: conference 
+  publisher: CDC 2025 
+  date: 2025-12
+  doi: 10.1109/CDC57313.2025.11312718
+  authors:
+    - Rand Asswad
+    - Jean-Luc Gouzé
+    - Eugenio Cinquemani
+
+- title: Optimization of microalgae biosynthesis via controlled algal-bacterial symbiosis
+  type: conference 
+  publisher: CDC 2024 
+  date: 2024-12
+  doi: 10.1109/CDC56724.2024.10886300
+  authors:
+    - Rand Asswad
+    - Walid Djema
+    - Olivier Bernard
+    - Jean-Luc Gouzé
+    - Eugenio Cinquemani
+
+- title: Kalman-based approaches for online estimation of bioreactor dynamics from fluorescent reporter measurements
+  type: conference 
+  publisher: ECC 2024 
+  date: 2024-06
+  doi: 10.23919/ECC64448.2024.10591076
+  authors:
+    - Rand Asswad
+    - Eugenio Cinquemani
+    - Jean-Luc Gouzé
+
+- title: An Auditory Cortex Model for Sound Processing
+  type: conference
+  publisher: GSI 2021
+  date: 2021-07
+  doi: 10.1007/978-3-030-80209-7_7
+  abstract: |
+    The reconstruction mechanisms built by the human auditory system during
+    sound reconstruction are still a matter of debate.
+    The purpose of this study is to refine the auditory cortex model introduced in [9],
+    and inspired by the geometrical modelling of vision.
+    The algorithm transforms the degraded sound in an 'image' in the time-frequency domain
+    via a short-time Fourier transform. Such an image is then lifted in the Heisenberg group
+    and it is reconstructed via a Wilson-Cowan differo-integral equation.
+    Numerical experiments on a library of speech recordings are provided,
+    showing the good reconstruction properties of the algorithm.
+  authors:
+    - Rand Asswad
+    - Ugo Boscain
+    - Giuseppina Turco
+    - Dario Prandi
+    - Ludovic Sacchelli
+  tags:
+    - auditory-cortex
+    - Heisenberg-group
+    - Wilson-Cowan-equation
+    - Kolmogorov-operator

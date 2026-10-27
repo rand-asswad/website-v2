@@ -1,0 +1,62 @@
+@use '../abstract' as *;
+
+// Filter: native radio buttons, visually replaced by nav-style text
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space * 1.5;
+  padding: 0;
+  border: 0;
+  margin-block-end: $space * 2;
+
+  &__option {
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+
+    input {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    span {
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+    }
+
+    &:hover span,
+    input:checked + span {
+      text-decoration: underline;
+    }
+
+    input:focus-visible + span {
+      outline: 1px dashed currentColor;
+      outline-offset: 3px;
+    }
+  }
+}
+
+.publications__list {
+  padding: 0;
+  list-style: none;
+}
+
+.publication {
+  & + & {
+    margin-block-start: $space * 1.5;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+}
+
+// Grey out (never hide) everything that is not the selected type
+@each $type in $publication-types {
+  .publications:has(input[value="#{$type}"]:checked) .publication:not([data-type="#{$type}"]) {
+    opacity: 0.35;
+  }
+}
