@@ -1,0 +1,12 @@
+@use '../abstract' as *;
+
+// Dated entries of a CV column: period, then what/where.
+.entries {
+  &__item + &__item {
+    margin-block-start: $space * 1.5;
+  }
+
+  dd {
+    margin-inline-start: 0;
+  }
+}

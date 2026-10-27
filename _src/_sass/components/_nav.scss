@@ -1,0 +1,35 @@
+@use '../abstract' as *;
+
+// Single level navigation: bold, underlined when current or hovered.
+.nav {
+  margin-block-start: $space * 1.5;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-block: $space * .4;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover,
+    &[aria-current="page"] {
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+    }
+  }
+
+  // No hamburger needed: a few short items fit in a wrapping row
+  @include respond-below($md) {
+    margin-block-start: $space;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: $space * 1.5;
+    }
+  }
+}

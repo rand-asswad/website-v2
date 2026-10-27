@@ -1,0 +1,32 @@
+@use '../abstract' as *;
+
+.site-header {
+  grid-area: header;
+  align-self: start;
+  position: sticky;
+  inset-block-start: 0;
+  padding-block: $space * 2;
+  padding-inline: $space * 3;
+
+  @include respond-below($md) {
+    position: static;
+    padding-block: $space * 1.5 0;
+    padding-inline: $space * 1.5;
+  }
+}
+
+.site-title {
+  display: block;
+  font-size: $site-title-font-size;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+
+  // keep clear of the language switch on narrow screens
+  @include respond-below($md) {
+    padding-inline-end: $space * 4;
+  }
+}

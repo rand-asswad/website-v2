@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  {%- if site.data.links.size > 0 %}
+  <ul class="site-footer__links">
+    {%- for link in site.data.links %}
+    <li><a href="{{ link.url }}" rel="me noopener">{{ link.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</footer>

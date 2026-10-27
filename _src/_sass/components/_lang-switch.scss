@@ -1,0 +1,26 @@
+@use '../abstract' as *;
+
+// Top corner of the reading direction (right in LTR, left in RTL)
+.lang-switch {
+  position: absolute;
+  inset-block-start: $space;
+  inset-inline-end: $space;
+  z-index: 10;
+
+  &__list {
+    display: flex;
+    gap: $space;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+    }
+  }
+}

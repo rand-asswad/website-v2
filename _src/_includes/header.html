@@ -1,0 +1,5 @@
+{%- assign home = site.pages | where: "ref", "home" | where: "lang", page.lang | first -%}
+<header class="site-header">
+  <a class="site-title" href="{{ home.url | default: '/' | relative_url }}">{{ site.title }}</a>
+  {%- include nav.html %}
+</header>

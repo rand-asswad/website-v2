@@ -1,0 +1,21 @@
+{%- comment -%}
+  Lists every other language for which a translation of this page exists
+  (same `ref`, different `lang`). Renders nothing if there is none.
+{%- endcomment -%}
+{%- if page.ref -%}
+{%- assign ui = site.data.i18n[page.lang] -%}
+{%- assign translations = site.pages | where: "ref", page.ref -%}
+<nav class="lang-switch" aria-label="{{ ui.lang_label }}">
+  <ul class="lang-switch__list">
+    {%- for language in site.data.languages %}
+    {%- assign code = language[0] -%}
+    {%- if code != page.lang %}
+    {%- assign target = translations | where: "lang", code | first -%}
+    {%- if target %}
+    <li><a class="lang-switch__link" href="{{ target.url | relative_url }}" lang="{{ code }}" hreflang="{{ code }}" aria-label="{{ language[1].name }}">{{ language[1].label }}</a></li>
+    {%- endif %}
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+</nav>
+{%- endif -%}

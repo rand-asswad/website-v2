@@ -1,0 +1,35 @@
+# Columns of the CV page. Add, remove or reorder freely:
+# the layout adapts (1 to N columns, wrapping on small screens).
+#
+# Each column: a title, and `entries` (period / title / place / url)
+# and/or `text` (markdown).
+columns:
+  - title: Research experience
+    entries:
+      - period: 09/2026 – present
+        title: Research fellow
+        place: GIPSA-lab, Grenoble, France
+      - period: 10/2022 – 08/2026
+        title: PhD student
+        place: Inria, Université Grenoble Alpes, France
+
+  - title: Teaching experience
+    entries:
+      - period: 09/2026 – present
+        title: Teaching assistant (ATER, 192 hours)
+        place: Ense3, Grenoble-INP, France
+      - period: 09/2025 – 08/2026
+        title: Teaching assistant (ATER, 192 hours)
+        place: Faculté d'Economie de Grenoble, Université Grenoble Alpes, France
+
+  - title: Education
+    entries:
+      - period: 10/2022 – 06/2026
+        title: PhD in applied mathematics
+        place: University Grenoble Alpes, France
+      - period: 09/2014 – 08/2021
+        title: Engineering degree in applied mathematics
+        place: INSA Rouen Normandie, France
+      - period: 09/2019 – 08/2020
+        title: Master's degree in computer science
+        place: Université Rouen Normandie, France

@@ -1,0 +1,40 @@
+---
+layout: base
+---
+{%- comment -%}
+  Multi-column page driven by data.
+  Front matter: `data: cv` reads _data/cv/<page.lang>.yml -> `columns:` list.
+  Any text written in the page body is shown below the columns.
+{%- endcomment -%}
+{%- assign columns = site.data[page.data][page.lang].columns -%}
+<article class="page page--columns">
+  <h1 class="sr-only">{{ page.title }}</h1>
+  <div class="columns" style="--columns: {{ columns.size }}">
+    {%- for column in columns %}
+    <section class="column" aria-labelledby="column-{{ forloop.index }}">
+      <h2 id="column-{{ forloop.index }}">{{ column.title }}</h2>
+      {%- if column.text %}
+      {{ column.text | markdownify }}
+      {%- endif %}
+      {%- if column.entries %}
+      <dl class="entries">
+        {%- for entry in column.entries %}
+        <div class="entries__item">
+          <dt>{{ entry.period }}</dt>
+          <dd>
+            {%- if entry.url %}<a href="{{ entry.url }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}
+            {%- if entry.place %}<br>{{ entry.place }}{% endif -%}
+          </dd>
+        </div>
+        {%- endfor %}
+      </dl>
+      {%- endif %}
+    </section>
+    {%- endfor %}
+  </div>
+  {%- if content != blank %}
+  <div class="page-content">
+    {{ content }}
+  </div>
+  {%- endif %}
+</article>

@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/* Theming as inspired by this article
+ * https://bcodes.io/blog/post/theming-css-variables-in-scss
+ */
+:root {
+  @include spread-map($theme-map-light);
+  color-scheme: light;
+}
+
+:root.dark {
+  @include spread-map($theme-map-dark);
+  color-scheme: dark;
+}
+
+// To follow the OS setting instead of (or before) a manual toggle:
+// @media (prefers-color-scheme: dark) {
+//   :root:not(.light) { @include spread-map($theme-map-dark); color-scheme: dark; }
+// }
+
+body {
+  background-color: theme-var($theme-background);
+  color: theme-var($theme-on-background);
+}

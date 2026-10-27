@@ -1,0 +1,8 @@
+// Monospace font (the only family used on the site).
+// Add your @import url(...) for the font you choose right here, e.g.
+// @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=optional');
+// then put its name first in the stack below, before the defaults.
+
+:root {
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+}

@@ -1,0 +1,26 @@
+@use '../abstract' as *;
+@use 'header';
+@use 'section';
+@use 'footer';
+
+// Sidebar (title + nav) on the left, content on the right.
+// Under $md everything stacks in a single column.
+.site {
+  position: relative;
+  display: grid;
+  grid-template-columns: $sidebar-width minmax(0, 1fr);
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "header main"
+    "header footer";
+  min-height: 100vh;
+
+  @include respond-below($md) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+}

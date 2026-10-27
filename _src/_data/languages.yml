@@ -1,0 +1,20 @@
+# One entry per language. The key is the language code used everywhere else
+# (front matter `lang`, folder name, _data/i18n.yml, _data/cv/<code>.yml).
+#   label: short text shown in the language switch
+#   name:  full name (used as the accessible name of the switch link)
+#   dir:   ltr | rtl  (written on <html dir="...">)
+en:
+  label: En
+  name: English
+  dir: ltr
+fr:
+  label: Fr
+  name: Français
+  dir: ltr
+
+# Later, for Arabic: uncomment, add an `ar` scope to _config.yml defaults,
+# create _src/ar/, _data/cv/ar.yml and an `ar:` block in _data/i18n.yml.
+# ar:
+#   label: ع
+#   name: العربية
+#   dir: rtl

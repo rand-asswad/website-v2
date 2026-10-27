@@ -1,0 +1,19 @@
+{%- assign ui = site.data.i18n[page.lang] -%}
+{%- assign language = site.data.languages[page.lang] -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}" dir="{{ language.dir | default: 'ltr' }}">
+<head>
+  {%- include head.html %}
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ ui.skip_to_content }}</a>
+  <div class="site">
+    {%- include header.html %}
+    {%- include lang-switch.html %}
+    <main id="main" class="site-main">
+      {{ content }}
+    </main>
+    {%- include footer.html %}
+  </div>
+</body>
+</html>

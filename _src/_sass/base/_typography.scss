@@ -1,0 +1,95 @@
+@use '../abstract' as *;
+
+body {
+  font-family: $mono;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  overflow-wrap: break-word;
+  text-align: start;
+}
+
+// Titles look like a markdown heading: bold line, then a dashed rule.
+// Same size as the body text on purpose, as in the reference.
+h1,
+h2 {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: $line-height-base;
+  padding-block-end: $space;
+  margin-block-end: $space * 2;
+  border-block-end: 1px dashed theme-var($theme-on-background);
+}
+
+h3,
+h4 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: theme-var($theme-secondary);
+  text-underline-offset: 0.25em;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+// Flow content: one blank line between blocks
+.page-content > * + *,
+.column > * + * {
+  margin-block-start: $space;
+}
+
+.page-content > * + h2,
+.page-content > * + h3 {
+  margin-block-start: $space * 3;
+}
+
+// Markdown-style list markers ("- item"); delete these two lines for plain bullets
+ul {
+  padding-inline-start: 2ch;
+  list-style-type: "- ";
+}
+
+ol {
+  padding-inline-start: 3ch;
+}
+
+blockquote {
+  padding-inline-start: $space;
+  border-inline-start: 1px dashed theme-var($theme-on-background);
+}
+
+hr {
+  border: 0;
+  border-block-start: 1px dashed theme-var($theme-on-background);
+}
+
+code,
+kbd,
+samp {
+  font-family: inherit;
+  background: theme-var($theme-surface);
+  padding: 0 .3em;
+}
+
+pre {
+  padding: $space;
+  overflow-x: auto;
+  background: theme-var($theme-surface);
+
+  code {
+    padding: 0;
+    background: none;
+  }
+}

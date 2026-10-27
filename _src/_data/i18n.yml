@@ -1,0 +1,21 @@
+# Interface strings, meta description, and aria, per language.
+# Description appears in search engines preview (keep it under 120 chars)
+# Page content itself lives in the pages (markdown) and in _data/cv/<lang>.yml
+en:
+  description: >-
+    NAME is an engineer in applied mathematics and computer science,
+    specialized in AI and mathematical modeling.
+  skip_to_content: Skip to content
+  nav_label: Main navigation
+  lang_label: Language
+  not_found_text: This page does not exist or has moved.
+  not_found_home: Back to the home page
+fr:
+  description: >-
+    NAME est ingénieur en mathématiques appliquées et informatique,
+    spécialisé en IA et en modélisation mathématique.
+  skip_to_content: Aller au contenu
+  nav_label: Navigation principale
+  lang_label: Langue
+  not_found_text: Cette page n'existe pas ou a été déplacée.
+  not_found_home: Retour à l'accueil

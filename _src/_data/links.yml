@@ -1,0 +1,9 @@
+# Shown in the footer. Empty the list to hide it.
+- label: Google Scholar
+  url: https://scholar.google.com/citations?user=CCI1rqMAAAAJ&hl=en&oi=ao
+- label: ORCID
+  url: https://orcid.org/0009-0003-8053-2815
+- label: GitHub
+  url: https://github.com/rand-asswad
+- label: LinkedIn
+  url: https://www.linkedin.com/in/asswadrand 

@@ -1,0 +1,16 @@
+{%- comment -%}
+  The nav builds itself from the pages of the current language that define
+  `nav_order` in their front matter (label: `nav_title`, or `title`).
+  A page that should highlight another entry (e.g. a blog post -> "blog")
+  can set `nav_ref: blog`.
+{%- endcomment -%}
+{%- assign ui = site.data.i18n[page.lang] -%}
+{%- assign current = page.nav_ref | default: page.ref -%}
+{%- assign items = site.pages | where: "lang", page.lang | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
+<nav class="nav" aria-label="{{ ui.nav_label }}">
+  <ul class="nav__list">
+    {%- for item in items %}
+    <li><a class="nav__link" href="{{ item.url | relative_url }}"{% if current and item.ref == current %} aria-current="page"{% endif %}>{{ item.nav_title | default: item.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</nav>

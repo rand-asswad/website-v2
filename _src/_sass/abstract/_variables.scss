@@ -1,0 +1,63 @@
+// Fonts
+$mono:        var(--mono);
+
+// Type
+$font-size-base:        clamp(0.875rem, calc(0.84rem + 0.15vw), 1rem);
+$site-title-font-size:  clamp(1.5rem, calc(1.2rem + 1.4vw), 2.25rem);
+$line-height-base:      1.5;
+$letter-spacing-base:   0.06em;
+
+// Spacing: every gap is a multiple of this unit
+$space: 1rem;
+
+// Breakpoints (Desktop-first, using maximum values)
+$sm: 650px;
+$md: 1000px;
+$lg: 1400px;
+
+// Layout
+$sidebar-width:     clamp(12rem, 25vw, 22rem);
+$text-max-width:    72ch;   // single column pages
+$columns-breakpoint: 64rem; // content width from which columns sit side by side
+
+// Theme
+
+// Link Sass and CSS variables
+$theme-primary: --theme-primary;
+$theme-secondary: --theme-secondary;
+$theme-tertiary: --theme-tertiary;
+$theme-surface: --theme-surface;
+$theme-background: --theme-background;
+$theme-on-primary: --theme-on-primary;
+$theme-on-secondary: --theme-on-secondary;
+$theme-on-tertiary: --theme-on-tertiary;
+$theme-on-surface: --theme-on-surface;
+$theme-on-background: --theme-on-background;
+
+// Default light theme: plain "html file" look
+$theme-map-light: (
+    $theme-background:    #f3f3f3,  // page
+    $theme-on-background: #111111,  // text, rules, nav
+    $theme-surface:       #ffffff,  // code blocks, future cards
+    $theme-on-surface:    #111111,
+    $theme-primary:       #111111,  // emphasis (hover/active)
+    $theme-on-primary:    #f3f3f3,
+    $theme-secondary:     #595959,  // muted text, link underlines (AA on background)
+    $theme-on-secondary:  #ffffff,
+    $theme-tertiary:      #bdbdbd,  // decorative borders only
+    $theme-on-tertiary:   #111111,
+);
+
+// Optional dark theme, active when <html class="dark"> (no toggle yet)
+$theme-map-dark: (
+    $theme-background:    #161616,
+    $theme-on-background: #e8e8e8,
+    $theme-surface:       #202020,
+    $theme-on-surface:    #e8e8e8,
+    $theme-primary:       #ffffff,
+    $theme-on-primary:    #161616,
+    $theme-secondary:     #a0a0a0,
+    $theme-on-secondary:  #161616,
+    $theme-tertiary:      #444444,
+    $theme-on-tertiary:   #e8e8e8,
+);
