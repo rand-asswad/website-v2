@@ -8,6 +8,7 @@ en:
   skip_to_content: Skip to content
   nav_label: Main navigation
   lang_label: Language
+  theme_toggle: Toggle theme
   not_found_text: This page does not exist or has moved.
   not_found_home: Back to the home page
 fr:
@@ -17,5 +18,6 @@ fr:
   skip_to_content: Aller au contenu
   nav_label: Navigation principale
   lang_label: Langue
+  theme_toggle: Changer de thème
   not_found_text: Cette page n'existe pas ou a été déplacée.
   not_found_home: Retour à l'accueil

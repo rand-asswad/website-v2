@@ -2,4 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {%- include meta.html %}
 {%- comment %} Favicons: add yours here (files in assets/favicons/). {% endcomment %}
+<!-- Set theme and load stylesheet -->
+<script>
+  const root = document.documentElement;
+  root.dataset.theme = localStorage.getItem('theme') || 'dark';
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.theme-toggle')) return;
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', root.dataset.theme);
+  });
+</script>
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
