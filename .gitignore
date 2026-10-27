@@ -1,7 +1,5 @@
 # Production
 .draft
-fr/
-fr.*
 
 # Jekyll metadata
 _site/

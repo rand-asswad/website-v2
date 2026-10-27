@@ -1,0 +1,31 @@
+columns:
+  - title: Expérience de recherche
+    entries:
+      - period: 09/2026 – present
+        title: Attaché temporaire d'enseignement et de recherche (ATER) 
+        place: GIPSA-lab, Grenoble, France
+      - period: 2021 – 2023
+        title: Doctorant 
+        place: Inria, Université Grenoble Alpes, France
+
+  - title: Expérience d'enseignement
+    entries:
+      - period: 09/2026 – present
+        title: Attaché temporaire d'enseignement et de recherche (ATER) 
+        place: Ense3, Grenoble-INP, France
+      - period: 09/2025 – 08/2026
+        title: Attaché temporaire d'enseignement et de recherche (ATER) 
+        place: Faculté d'Economie de Grenoble, Université Grenoble Alpes, France
+
+  - title: Formation
+    entries:
+      - period: 10/2022 – 06/2026
+        title: Doctorat en mathématiques appliquées
+        place: University Grenoble Alpes, France
+      - period: 09/2014 – 08/2021
+        title: Diplôme d'ingénieur en mathématiques appliquées
+        place: INSA Rouen Normandie, France
+      - period: 09/2019 – 08/2020
+        title: Master en informatique théorique et applications 
+        place: Université Rouen Normandie, France
+
