@@ -2,10 +2,11 @@
 
 // Top corner of the reading direction (right in LTR, left in RTL)
 .lang-switch {
-  position: absolute;
-  inset-block-start: $space;
-  inset-inline-end: $space;
-  z-index: 10;
+  // no need, the `.site-controls` wrapper class handles positioning
+  //position: absolute;
+  //inset-block-start: $space;
+  //inset-inline-end: $space;
+  //z-index: 10;
 
   &__list {
     display: flex;

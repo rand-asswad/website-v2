@@ -9,7 +9,10 @@
   <a class="skip-link" href="#main">{{ ui.skip_to_content }}</a>
   <div class="site">
     {%- include header.html %}
-    {%- include lang-switch.html %}
+    <div class="site-controls">
+      {%- include lang-switch.html %}
+      {%- include theme-toggle.html %}
+    </div>
     <main id="main" class="site-main">
       {{ content }}
     </main>

@@ -24,3 +24,15 @@
       "footer";
   }
 }
+
+
+// Top corner of the reading direction: language switch + theme toggle
+.site-controls {
+  position: absolute;
+  inset-block-start: $space;
+  inset-inline-end: $space;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: $space;
+}

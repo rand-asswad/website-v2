@@ -27,6 +27,6 @@
 
   // keep clear of the language switch on narrow screens
   @include respond-below($md) {
-    padding-inline-end: $space * 4;
+    padding-inline-end: $space * 6;
   }
 }
