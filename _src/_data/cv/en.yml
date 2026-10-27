@@ -8,24 +8,39 @@ columns:
     entries:
       - period: 09/2026 – present
         title: Research fellow
-        place: GIPSA-lab, Grenoble, France
+        place: GIPSA-lab, Grenoble INP, France
       - period: 10/2022 – 08/2026
         title: PhD student
-        place: Inria, Université Grenoble Alpes, France
+        place: Microcosme Team, Inria, Université Grenoble Alpes, France
+      - period: 09/2024 – 11/2024
+        title: Visiting researcher
+        place: Leibniz Universität Hannover, DAAD, Germany
+      - period: 11/2020 – 06/2021
+        title: Research intern
+        place: L2S, Centralesupelec, CNRS, France
+      - period: 06/2019 – 08/2019
+        title: Research intern
+        place: Pixel Team, Inria, Université de Lorraine, France
 
   - title: Teaching experience
     entries:
       - period: 09/2026 – present
         title: Teaching assistant (ATER, 192 hours)
-        place: Ense3, Grenoble-INP, France
+        place: Ense3, Grenoble INP, France
       - period: 09/2025 – 08/2026
         title: Teaching assistant (ATER, 192 hours)
         place: Faculté d'Economie de Grenoble, Université Grenoble Alpes, France
+      - period: 09/2022 – 01/2024
+        title: Teaching assistant (vacataire, <60 hours)
+        place: Département Licence Sciences et Technologies, Université Grenoble Alpes, France
 
   - title: Education
     entries:
       - period: 10/2022 – 06/2026
         title: PhD in applied mathematics
+        place: MSTII, University Grenoble Alpes, France
+      - period: 11/2024 – 12/2025
+        title: Higher education teaching program 
         place: University Grenoble Alpes, France
       - period: 09/2014 – 08/2021
         title: Engineering degree in applied mathematics
@@ -33,3 +48,6 @@ columns:
       - period: 09/2019 – 08/2020
         title: Master's degree in computer science
         place: Université Rouen Normandie, France
+      - period: 06/2013
+        title: Syrian Scientific Baccalaureate
+        place: Damascus, Syria
