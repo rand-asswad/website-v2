@@ -1,3 +1,11 @@
+- title: Bioreactor state estimation from fluorescence measurements with unknown resource allocation
+  type: preprint
+  publisher: Preprint
+  date: 2026-11-09
+  authors:
+    - Rand Asswad
+    - Gildas Besançon
+
 - title: Optimal Control of Vitamin-Mediated Algal-Bacterial Co-Cultures under Optogenetic Regulation
   type: journal
   publisher: Automatica
