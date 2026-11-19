@@ -7,7 +7,6 @@ nav_order: 1
 permalink: /
 ---
 
-
 Hi there! I'm Rand, a junior researcher and teaching assistant at
 [Grenoble INP](https://www.grenoble-inp.fr/en), France.
 I specialize in control theory, optimization, and mathematical modeling. 
@@ -17,9 +16,13 @@ for nonlinear systems from biotechnological applications.
 In particular, my PhD topic was the optimization and control of synthetic
 microbial consortia in continuous bioreactors.
 
-<!--
-More generally, I enjoy solving mathematical problems with innovative solutions.
--->
+Biological systems are particularly interesting from a control perspective:
+they are nonlinear, subject to significant uncertainties, and often difficult
+to measure accurately with very few measurable states in real-time.
+These challenges make them a fascinating playground for estimation,
+optimization, and control methods. Beyond the mathematical questions,
+I find it rewarding to work on problems with potential applications
+in biotechnology.
 
 ## Research interests
 
@@ -34,15 +37,15 @@ I am passionate about mathematics and math-adjacent fields, and am a big fan of
 explainer YouTube video or blog post that provides a new angle that makes
 some idea *click*, whether it's a new notion to me or something I've known for years.
 
-Ever since I started learning *logo* at school (if you know, you know), I fell
+Ever since I started learning *Logo* at school (if you know, you know), I fell
 in love with programming. Of course, I have very strong opinions on programming
 languages and a healthy hatred for Java. I enjoy the part where I have to think
 about how to structure my code and make it modular, clean, and optimal.
 Naturally, I'm a strong advocate for **reproducible research**.
 
 I have embraced the minimalist Linux philosophy in 2017 and have spent countless
-hours ricing/configuring my i3 desktop environment. I'm as comfortable in a
-terminal as I am using a GUI window.
+hours ricing (linux-talk for configuring) my i3 desktop environment.
+I'm as comfortable in a terminal as I am using a GUI window.
 Yes, I'm one of those but alas I've abandoned Arch and have been seduced by the
 stability of Manjaro.
 
